@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+
+            list-style: none;
+            width: 300px;
+            height: 30px;
+        }
+        .you{
+            background-color: greenyellow !important;
+        }
+    </style>
+</head>
+<body>
+
+<ul id="ul">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<script>
+    var ul=document.getElementById("ul");
+    var lis=ul.getElementsByTagName("li");
+
+    for (var i = 0; i < lis.length; i++) {
+            if(i%2==0){
+                lis[i].style.backgroundColor="#2EFFA5";
+            }else{
+                lis[i].style.backgroundColor="blue";
+            }
+
+        lis[i].onmouseover=function(){
+            this.className="you";
+        }
+        lis[i].onmouseout=function(){
+            this.className="";
+        }
+
+    }
+
+
+
+
+</script>
+
+</body>
+</html>

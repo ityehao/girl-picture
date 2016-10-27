@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+
+<script>
+
+    function CreateStu(name){
+        this.name=name;
+
+        this.sayHi=function(){
+            console.log("我叫："+this.name);
+        }
+
+    }
+
+    var stu= new CreateStu("叶浩");
+    console.log(stu);
+
+</script>
+
+</body>
+</html>
